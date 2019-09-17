@@ -13,15 +13,15 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   color: white;
-  div:not(:last-child) {
+  div:not(:first-child) {
     margin-top: 20px;
   }
 `;
 
 const Clock = styled.div`
   font-size: 24px;
+  margin-top: 30vh;
 `;
 
 const Greeting = styled.div`
@@ -52,7 +52,7 @@ function App(props) {
       <Container>
         <Clock>{date.toLocaleTimeString()}.</Clock>
         <Greeting>안녕하세요 97번 좌석입니다.</Greeting>
-        <Message></Message>
+        <Message>곧 돌아 오겠습니다.</Message>
       </Container>
     </>
   );
